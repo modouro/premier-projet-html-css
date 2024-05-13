@@ -1,0 +1,618 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    transition: all.2s linear;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+}
+html{
+    overflow: scroll;
+    scroll-padding-top: 7em;
+    scroll-behavior: smooth;
+}
+body{
+    position: relative;
+}
+nav{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: 20;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 2%;
+    height: 80px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2) ;
+}   
+nav div.droite{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav div img{
+    width: 50px;
+    height: 50px;
+    padding-right: 20px;
+}
+nav div ul{
+    display: flex;
+}
+nav div ul li{
+    list-style: none;
+    margin: 0 15px;
+    padding: 0 10px;
+}
+nav div ul li a{
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    transition: 0.2s;
+    text-transform: capitalize;
+}
+nav div ul li a:hover{
+    color: #008000;
+}
+nav .gauche{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .gauche button{
+    background-color: #008000;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px 50px;
+    font-size: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+nav i{
+    font-size: 20px;
+    margin: 0 15px;
+}
+
+                        /* ----------------- la section présentation ----------------------- */
+.presentation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 50px;
+    padding: 10px 5%;
+    height: calc(100hv - 50px);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2) ;
+}
+.presentation .gaucheP{
+    width: 45%;
+    position: relative;
+}
+::-webkit-scrollbar{
+    width: 8px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #000;
+}
+.presentation .gaucheP h2{
+    font-size: 25px;
+    margin-bottom: 25px;
+    color: #008000;
+}
+.presentation .gaucheP .sous-titre{
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: bold;
+}
+.presentation .gaucheP .desc{
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.presentation .gaucheP a{
+    background-color: #008000;
+    color: #fff;
+    font-size: 14px;
+    padding: 15px 40px;
+    transition: 0.5s;
+    border-radius: 10px;
+    font-weight: 300;
+    margin-top: 15px;
+}
+.presentation .gaucheP a:hover{
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.presentation .droiteP{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    padding: 20px 0;
+}
+.presentation .droiteP img{
+    width: 100%;
+}
+
+            /* -------------------section transformation agroalimentaire----------------  */
+
+.section-transformation{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ECF0F1 ;
+    width: 100%;
+    padding: 8px 5%;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2) ;
+}
+.section-transformation .tgauche{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    /* height: auto; */
+    border: 3px solid #fff;
+    border-radius: 15px;
+    background-color: #fff;
+}
+.section-transformation .tgauche .img1-tgauche{
+    width: 100px;
+    height: 120px;
+    margin: 25px 0;
+}
+.section-transformation .tgauche .img2-tgauche{
+    width: 100px;
+    height: 120px;
+    margin: 25px 0;
+}
+.section-transformation .tdroite{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 75%;
+    background-color: #fff;
+    margin: 20px 0;
+    border-radius: 15px;
+    padding-left: 10%;
+}
+.section-transformation .tdroite .sousdroite1 h2{
+    font-size: 30px;
+    color: rgb(241, 147, 23);
+    text-decoration:underline;
+    padding-bottom: 15px;
+    margin: 20px 0;
+}
+.section-transformation .tdroite .sousdroite1 P{
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 15px;
+}
+.section-transformation .tdroite .sousdroite2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.section-transformation .tdroite .sousdroite2 .img-tr1{
+    background-image: url("../images/imgtr1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 10px solid #ECF0F1;
+    border-radius: 0px 50px 0px 50px;
+    width: 150px;
+    height: 150px;
+    margin: 0 10px;
+}
+.section-transformation .tdroite .sousdroite2 .img-tr2{
+    background-image: url("../images/imgtre2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 10px solid #ECF0F1;
+    border-radius: 0px 50px 0px 50px;
+    width: 150px;
+    height: 150px;
+    margin: 0 10px;
+}
+.section-transformation .tdroite .sousdroite2 .img-tr3{
+    background-image: url("../images/imgtr3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 10px solid #ECF0F1;
+    border-radius: 0px 50px 0px 50px;
+    width: 150px;
+    height: 150px;
+    margin: 0 10px;
+}
+
+                    
+
+                    /* -----------------Le code css du produit de la boutique------------------------ */
+.produit{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 5%;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2) ;
+}
+.produit h1{
+    margin: 20px 0 40px 0;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+.produit .images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+    width: 260px;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 25px;
+    margin: 5px 40px 15px 0 ;
+}
+.produit .cards img{
+    padding: 10px 20px;
+    width: 100%;
+    height: 250px;
+}
+.produit .cards h2{
+    margin: 5px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.produit .cards .produit_naturel{
+    font-size: 14px;
+    font-weight: 300;
+}
+.produit .cards .prix{
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+.produit .cards i{
+    color: #04461e;
+    font-size: 20px;
+}
+.cards button{
+    border: none;
+    outline: 0;
+    margin-top: 10px;
+    padding: 12px 99px;
+    color: #fff;
+    background-color: #04461e;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 0 0 25px 25px;
+}
+.cards button:hover{
+    opacity: 0.7;
+}
+                        /* ---------la presentation de section temoignage ---------------- */
+.temoignage{
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    background-image: url('../images/temoignage.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* opacity: 0.7; */
+}
+.temoignage::before{
+    background-color: #000;
+    opacity: 0.3;
+}
+.temoignage h1{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 800;
+    margin: 15px 0;
+    color: #fff;
+}
+.temoignage .temoi-paragraphe{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    color: #fff;
+}
+.temoignage .sec-temoignage{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 22%;
+    padding-bottom: 5px;
+}
+.temoignage .sec-temoignage .nom-temoin{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 240px;
+    height: auto;
+}
+.temoignage .sec-temoignage .nom-temoin img{
+    border-radius: 200px 200px 200px 200px;
+    margin: 15px 50px;
+    width: 100px;
+    height: 100px;
+}
+.temoignage .sec-temoignage .nom-temoin h3{
+    color: #04461e;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.temoignage .sec-temoignage .nom-temoin p{
+    text-align: center;
+    font-size: 14px;
+    font-family:'Times New Roman', Times, serif;
+    margin: 0 20px 70px 20px;
+}
+
+                /* ------------------- création de la page perso ------------------- */
+
+.perso_produit{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #04461e;
+    padding-bottom: 5%;
+}
+.perso_produit .sec_perso_gauche{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    margin-bottom: 5%;
+}
+.perso_produit .sec_perso_gauche img{
+    margin-top: 15px;
+    margin-bottom: 80px;
+}
+.perso_produit .sec_perso_gauche p{
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    overflow: hidden;
+}
+.perso_produit .sec_perso_droite{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px 30px;
+    width: 50%;
+}
+.perso_produit .sec_perso_droite .ligne-haute{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 50px;
+}
+.perso_produit .sec_perso_droite .ligne-bas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px 50px;
+}
+
+        /* ----------------------- section maailing -------------------------- */
+.mail{
+    background-image: url("../images/contact.jpeg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;   
+}
+.mail::before{
+    content: "";
+    background-color: #000;
+    position: absolute;
+    opacity: 0.5;  
+}
+.mail .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+.mail .form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 10% auto; 
+    width: 40%;
+}
+.mail .form form input{
+    width: 100%;
+    height: 35px;
+    box-sizing: border-box;
+    margin-bottom: 2%;
+    background-color: #fff;
+    font-size: 14px;
+}
+.mail .form form button{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+    background-color: #04461e;
+    padding: 1% 15%;
+}
+
+                    /* ---------------Nos services---------------  */
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ECF0F1;
+    padding-bottom: 2%;
+    gap: 30px 10px;
+}
+.services h1{
+    text-transform: capitalize;
+    color: #008000;
+    margin-top: 40px;
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 5%;
+    font-family: "Popins",sans-serif;
+}
+.services .bloc-services{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px 50px;
+    margin-left: 5%;
+    margin-right: 5%; 
+}
+.services .bloc-services .card-service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    width: 21%;
+    height: auto;
+    background-color: #fff;
+    padding: 40px 0;
+}
+.services .bloc-services .card-service i{
+    font-size: 22px;
+    color: #008000;
+    padding-bottom: 20px;
+}
+.services .bloc-services .card-service h2{
+    font-size: 12px;
+    color: #008000;
+    margin-bottom: 8px;
+}
+.services .bloc-services .card-service P{
+    margin: 0 10px;
+    font-size: 14px;
+    text-justify:inter-word;
+}
+                /*---------------- section contacter  ------------------------  */
+.coordonne{
+    background-image: url("../images/bissap-2w.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.coordonne::before{
+    background-color: rgba(221, 16, 16, 0.7);
+}
+
+.coordonne .contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.coordonne .contact h1{
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 1%;
+    color: #000;
+}
+.coordonne .contact form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 6% auto;
+    margin-bottom: 2%; 
+    width: 40%;
+}
+.coordonne .contact form input{
+    width: 100%;
+    height: 35px;
+    box-sizing: border-box;
+    margin-bottom: 2%;
+    background-color: #fff;
+}
+.coordonne .contact form textarea{
+    width: 100%;
+    height: 85px;
+    box-sizing: border-box;
+    margin-bottom: 2%;
+    background-color: #fff;
+}
+.coordonne .contact form button{
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+    background-color: #04461e;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+                    /*   --------------sous section contacter-------------------   */
+.sect-contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    color: #fff;
+    gap: 20px 70px;
+    font-size: 15px;
+    padding: 1% 5% 3% 1%;
+    margin-top: 2%;
+} 
+.sect-contact h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+                    /* ----------------footer -------------------------- */
+footer{
+    height: auto;
+    width: 100%;
+}                    
+footer p{
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    padding: 5px 0;
+    border: 1px;
+    margin-top: -1px;
+    font-size: 14px;
+}
